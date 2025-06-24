@@ -1,4 +1,11 @@
-import streamlit as st
+import streamlit as st  # ← これ1回だけでOK
+
+# 簡易パスワード認証
+password = st.text_input("🔒 パスワードを入力してください", type="password")
+if password != "shodo123":
+    st.warning("正しいパスワードを入力してください")
+    st.stop()
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
