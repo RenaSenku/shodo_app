@@ -2,7 +2,7 @@ import streamlit as st  # ← これ1回だけでOK
 
 # 簡易パスワード認証
 password = st.text_input("🔒 パスワードを入力してください", type="password")
-if password != "shodo123":
+if password != "923":
     st.warning("正しいパスワードを入力してください")
     st.stop()
 
